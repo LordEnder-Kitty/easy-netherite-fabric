@@ -58,7 +58,7 @@
                 },
                 {
                   "type": "minecraft:item",
-                  "name": "netherite:block_of_reinforced_crystal"
+                  "name": "netherite:reinforced_crystal_dust"
                 }
               ],
               "conditions": [

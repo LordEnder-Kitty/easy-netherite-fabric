@@ -10,16 +10,16 @@
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/LordEnder_Kitty/easy-netherite-fabric"
+    "sources": "https://github.com/LordEnder-Kitty/easy-netherite-fabric"
   },
 
-  "license": "MIT",
+  "license": "MIT License",
   "icon": "assets/netherite/textures/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.enderkitty.netherite.NetheriteMod"
+      "net.enderkitty.netherite.Netherite"
     ],
     "client": [
       "net.enderkitty.netherite.NetheriteClient"

@@ -6,7 +6,7 @@
   "mixins": [
   ],
   "client": [
-    "NetheriteMixin"
+    "ExampleMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -24,22 +24,12 @@ import java.util.List;
 public class ModBlocks {
 
     public static final Block BLOCK_OF_REINFORCED_CRYSTAL = registerBlock("block_of_reinforced_crystal",
-            new OreBlock(FabricBlockSettings.of(Material.METAL).strength(8.0f).requiresTool().luminance(6)
+            new OreBlock(FabricBlockSettings.of(Material.METAL).strength(8.0f).requiresTool()
                     .sounds(BlockSoundGroup.COPPER), UniformIntProvider.create(1, 10)), ItemGroup.MISC);
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
         return Registry.register(Registry.BLOCK, new Identifier(Netherite.MOD_ID, name), block);
-    }
-
-    private static Item registerBlockItem(String name, Block block, ItemGroup group, String tooltipKey) {
-        return Registry.register(Registry.ITEM, new Identifier(Netherite.MOD_ID, name),
-                new BlockItem(block, new FabricItemSettings().group(group)) {
-                    @Override
-                    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-                        tooltip.add(Text.translatable(tooltipKey));
-                    }
-                });
     }
 
     private static Item registerBlockItem(String name, Block block, ItemGroup group) {
