@@ -2,13 +2,15 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "netherite:netherite_scrap_piece"
+      "item": "netherite:netherite_scrap_piece",
+      "count": 4
     },
     {
-      "item": "minecraft:gold_nugget"
+      "item": "minecraft:gold_nugget",
+      "count": 4
     }
   ],
   "result": {
-    "item": "miencraft:netherite_scrap"
+    "item": "minecraft:netherite_scrap"
   }
 }
