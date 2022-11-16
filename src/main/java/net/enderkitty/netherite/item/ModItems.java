@@ -8,7 +8,6 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class ModItems {
-
     public static final Item PLATED_DIAMOND = registerItem("plated_diamond",
             new Item(new FabricItemSettings().group(ItemGroup.MATERIALS)));
     public static final Item REINFORCED_CRYSTAL = registerItem("reinforced_crystal",
@@ -34,6 +33,5 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        Netherite.LOGGER.debug("Registering Mod Items for " + Netherite.MOD_ID);
     }
 }

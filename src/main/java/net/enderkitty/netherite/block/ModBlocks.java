@@ -6,26 +6,18 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.block.OreBlock;
-import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
 import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.Registry;
-import net.minecraft.world.World;
-import org.jetbrains.annotations.Nullable;
-
-import java.util.List;
 
 public class ModBlocks {
 
     public static final Block BLOCK_OF_REINFORCED_CRYSTAL = registerBlock("block_of_reinforced_crystal",
             new OreBlock(FabricBlockSettings.of(Material.METAL).strength(8.0f).requiresTool()
-                    .sounds(BlockSoundGroup.COPPER), UniformIntProvider.create(1, 10)), ItemGroup.MISC);
+                    .sounds(BlockSoundGroup.NETHERITE)), ItemGroup.MISC);
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
@@ -38,6 +30,5 @@ public class ModBlocks {
     }
 
     public static void registerModBlocks() {
-        Netherite.LOGGER.debug("Registering ModBlocks for " + Netherite.MOD_ID);
     }
 }
