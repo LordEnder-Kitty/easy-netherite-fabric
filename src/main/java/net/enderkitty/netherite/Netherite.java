@@ -26,6 +26,7 @@ public class Netherite implements ModInitializer {
 			content.addAfter(ModObjects.NETHER_FRAGMENT, ModObjects.NETHERITE_SCRAP_PIECE);
 			content.addAfter(ModObjects.NETHERITE_SCRAP_PIECE, ModObjects.REINFORCED_CRYSTAL_DUST);
 			content.addAfter(ModObjects.REINFORCED_CRYSTAL_DUST, ModObjects.BLOCK_OF_REINFORCED_CRYSTAL);
+			content.addAfter(ModObjects.BLOCK_OF_REINFORCED_CRYSTAL, ModObjects.UPGRADE_TEMPLATE_FRAGMENT);
 		});
 	}
 }
