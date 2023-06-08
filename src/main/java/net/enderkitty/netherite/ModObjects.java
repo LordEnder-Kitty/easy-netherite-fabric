@@ -14,28 +14,19 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModObjects {
 
-    public static final Item PLATED_DIAMOND = registerItem("plated_diamond",
-            new Item(new FabricItemSettings()));
-    public static final Item REINFORCED_CRYSTAL = registerItem("reinforced_crystal",
-            new Item(new FabricItemSettings()));
-    public static final Item CELESTIAL_CRYSTAL = registerItem("celestial_crystal",
-            new Item(new FabricItemSettings()));
-    public static final Item CRACKED_CELESTIAL_CRYSTAL = registerItem("cracked_celestial_crystal",
-            new Item(new FabricItemSettings()));
-    public static final Item HARD_CRYSTAL_FRAGMENT = registerItem("hard_crystal_fragment",
-            new Item(new FabricItemSettings()));
-    public static final Item LIQUIDIZED_END_CRYSTAL = registerItem("liquidized_end_crystal",
-            new Item(new FabricItemSettings()));
-    public static final Item NETHER_FRAGMENT = registerItem("nether_fragment",
-            new Item(new FabricItemSettings()));
-    public static final Item NETHERITE_SCRAP_PIECE = registerItem("netherite_scrap_piece",
-            new Item(new FabricItemSettings()));
-    public static final Item REINFORCED_CRYSTAL_DUST = registerItem("reinforced_crystal_dust",
-            new Item(new FabricItemSettings()));
+    public static final Item PLATED_DIAMOND = registerItem("plated_diamond", new Item(new FabricItemSettings()));
+    public static final Item REINFORCED_CRYSTAL = registerItem("reinforced_crystal", new Item(new FabricItemSettings()));
+    public static final Item CELESTIAL_CRYSTAL = registerItem("celestial_crystal", new Item(new FabricItemSettings()));
+    public static final Item CRACKED_CELESTIAL_CRYSTAL = registerItem("cracked_celestial_crystal", new Item(new FabricItemSettings()));
+    public static final Item HARD_CRYSTAL_FRAGMENT = registerItem("hard_crystal_fragment", new Item(new FabricItemSettings()));
+    public static final Item LIQUIDIZED_END_CRYSTAL = registerItem("liquidized_end_crystal", new Item(new FabricItemSettings()));
+    public static final Item NETHER_FRAGMENT = registerItem("nether_fragment", new Item(new FabricItemSettings()));
+    public static final Item NETHERITE_SCRAP_PIECE = registerItem("netherite_scrap_piece", new Item(new FabricItemSettings()));
+    public static final Item REINFORCED_CRYSTAL_DUST = registerItem("reinforced_crystal_dust", new Item(new FabricItemSettings()));
+    public static final Item UPGRADE_TEMPLATE_FRAGMENT = registerItem("upgrade_template_fragment", new Item(new FabricItemSettings()));
 
-    public static final Block BLOCK_OF_REINFORCED_CRYSTAL = registerBlock("block_of_reinforced_crystal",
-            new ExperienceDroppingBlock(FabricBlockSettings.of().strength(8.0f).requiresTool()
-                    .sounds(BlockSoundGroup.COPPER), UniformIntProvider.create(1, 10)));
+    public static final Block BLOCK_OF_REINFORCED_CRYSTAL = registerBlock("block_of_reinforced_crystal", new ExperienceDroppingBlock(FabricBlockSettings.create()
+            .strength(8.0f).requiresTool().sounds(BlockSoundGroup.COPPER), UniformIntProvider.create(1, 10)));
 
 
     private static Block registerBlock(String name, Block block) {

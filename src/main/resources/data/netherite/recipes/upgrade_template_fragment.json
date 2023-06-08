@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " N ",
+    "N#N",
+    " X "
+  ],
+  "key": {
+    "#": {"item": "minecraft:ancient_debris"},
+    "X": {"item": "netherite:plated_diamond"},
+    "N": {"item": "minecraft:netherrack"}
+  },
+  "result": {
+    "item": "netherite:upgrade_template_fragment"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "upgrades",
+  "pattern": [
+    " N ",
+    "N#N",
+    " X "
+  ],
+  "key": {
+    "#": {"item": "netherite:upgrade_template_fragment"},
+    "X": {"item": "netherite:plated_diamond"},
+    "N": {"item": "minecraft:netherrack"}
+  },
+  "result": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}
